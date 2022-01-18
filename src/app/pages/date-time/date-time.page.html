@@ -1,0 +1,61 @@
+<app-header title="date time"></app-header>
+
+<ion-content>
+
+  <!-- Datetime in popover with input -->
+  <ion-item>
+    <ion-input ></ion-input>
+    <ion-button fill="clear" id="open-date-input-2">
+      <ion-icon icon="calendar" slot="start"></ion-icon>
+      <ion-label>Calendario</ion-label>
+    </ion-button>
+    <ion-popover trigger="open-date-input-2">
+      <ng-template>
+        <ion-datetime
+          (ionChange)="obtenerFecha( $event )"
+        ></ion-datetime>
+      </ng-template>
+    </ion-popover>
+  </ion-item>
+
+  <ion-list>
+    <!--  -->
+    <ion-list-header>
+      <ion-label>Datos de Nacimiento</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Fecha de Nacimiento</ion-label>
+      <ion-datetime 
+      display-format="DD.MM.YYYY HH:mm" 
+      [value]="fechaNacimiemto.toISOString()"
+      (ionChange)="obtenerFecha( $event )" >
+        <div slot="title">Datos de Nacimento</div>
+      </ion-datetime>
+    </ion-item>
+
+    <!--  -->
+    <ion-list-header>
+      <ion-label>Restricciones</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label>Min - Max</ion-label>
+      <ion-datetime display-format="DD MMMM YYYY"
+          min="2017-01-01"
+          max="2024-12-31"></ion-datetime>
+    </ion-item>
+
+    <!-- TODO: Pendiente, hubo cambio en la version, 
+      pickerOptions' no es un propiedad conocide de ion-datetime -->
+    <ion-item>
+      <ion-datetime>
+      </ion-datetime>
+    </ion-item>
+
+
+  </ion-list>
+
+
+
+</ion-content>
+
