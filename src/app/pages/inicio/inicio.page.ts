@@ -30,6 +30,11 @@ export class InicioPage implements OnInit {
       name: 'Avatar',
       redirectTo: '/avatar'
     },
+    {
+      icon: 'radio-button-off-outline',
+      name: 'Button',
+      redirectTo: '/button'
+    },
   ];
 
 
