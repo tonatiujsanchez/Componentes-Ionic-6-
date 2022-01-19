@@ -1,0 +1,74 @@
+
+<app-header [title]="name || 'Input forms'"></app-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Input normal</ion-label>
+    </ion-list-header>
+    <ion-item>
+      <ion-label position="floating">Enter your name:</ion-label>
+      <ion-input type="text" placeholder="Funalito" [(ngModel)]="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Floating Label</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="fixed">Fixed Label</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="stacked">Stacked Label</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+
+
+  <form #formulario="ngForm" (ngSubmit)="onSubmit( formulario )">
+    <ion-list-header>
+      <ion-label>Formulario valido: {{ formulario.valid }}</ion-label>
+      <ion-button>Limpiar</ion-button>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label position="floating">Email:</ion-label>
+      <ion-input 
+          type="email" 
+          placeholder="Ejemplo@mail.com" 
+          [(ngModel)]="user.email"
+          name="email"
+          pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+          required>
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input
+      type="password"
+      name="password"
+      [(ngModel)]="user.password"
+      placeholder="******"
+      required>
+      </ion-input>
+    </ion-item>
+    <ion-button 
+        type="submit"
+        class="btn"
+        expand="block ion-padding"
+        [disabled]="formulario.invalid">
+        Guardar
+    </ion-button>
+
+  </form>
+
+
+
+</ion-content>
