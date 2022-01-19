@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+        defaultHref="/" 
+        text="Atras" 
+        color="primary"
+        mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-capitalize" color="primary">Grid</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="cambiarColumnas()" color="primary">
+        <ion-icon slot="start" name="grid-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid fixed> <!-- fixed: Centra el contenido en pantallas más grandes con si tubiera un "container" y no permite que el contenido se estire -->
+    <ion-row>
+
+      <ion-col [size]="numeroColumnas" size-sm="6" size-md="4" size-lg="4"
+              *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12]">
+        <ion-card mode="ios">
+          <!-- <ion-img src="https://frikimaestro.com/wp-content/uploads/2020/12/a328085f1145b611ea9fd42ff884c0b3.png"></ion-img> -->
+          <img class="card-img" src="https://frikimaestro.com/wp-content/uploads/2020/12/a328085f1145b611ea9fd42ff884c0b3.png" alt="Pokemón Snorlax">        
+          <ion-card-header>
+            <ion-card-title>Silicon Valley</ion-card-title>
+            <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Optio iure numquam, qui accusamus sequi nobis quibusdam quis ratione suscipit praesentium?
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  
+
+</ion-content>
