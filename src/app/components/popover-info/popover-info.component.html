@@ -1,0 +1,10 @@
+<ion-list>
+  <ion-item *ngFor="let item of items" (click)="onClick( item )">
+    <ion-icon slot="start" [name]="item.icon" [color]="(item.name) | lowercase"></ion-icon>
+    <ion-label>{{ item.name }}</ion-label>
+  </ion-item>
+  <ion-item (click)="cerrarPopover()">
+    <ion-icon color="danger" slot="start" name="close"></ion-icon>
+    <ion-label color="danger">Cerrar</ion-label>
+  </ion-item>
+</ion-list>

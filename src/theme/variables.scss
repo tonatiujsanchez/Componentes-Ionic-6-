@@ -113,6 +113,48 @@
 	--ion-color-github-contrast-rgb: 255,255,255;
 	--ion-color-github-shade: #13181e;
 	--ion-color-github-tint: #2d3238;
+  
+  /** html5 **/
+  --ion-color-html5: #E54C21;
+	--ion-color-html5-rgb: 229,76,33;
+	--ion-color-html5-contrast: #ffffff;
+	--ion-color-html5-contrast-rgb: 255,255,255;
+	--ion-color-html5-shade: #ca431d;
+	--ion-color-html5-tint: #e85e37;
+
+  /** css3 **/
+	--ion-color-css3: #0070BA;
+	--ion-color-css3-rgb: 0,112,186;
+	--ion-color-css3-contrast: #ffffff;
+	--ion-color-css3-contrast-rgb: 255,255,255;
+	--ion-color-css3-shade: #0063a4;
+	--ion-color-css3-tint: #1a7ec1;
+
+  /** javascript **/
+  --ion-color-javascript: #F7E018;
+	--ion-color-javascript-rgb: 247,224,24;
+	--ion-color-javascript-contrast: #000000;
+	--ion-color-javascript-contrast-rgb: 0,0,0;
+	--ion-color-javascript-shade: #d9c515;
+	--ion-color-javascript-tint: #f8e32f;
+
+  /** angular **/
+	--ion-color-angular: #C3002F;
+	--ion-color-angular-rgb: 195,0,47;
+	--ion-color-angular-contrast: #ffffff;
+	--ion-color-angular-contrast-rgb: 255,255,255;
+	--ion-color-angular-shade: #ac0029;
+	--ion-color-angular-tint: #c91a44;
+
+  /** nodejs **/
+	--ion-color-nodejs: #8CC94E;
+	--ion-color-nodejs-rgb: 140,201,78;
+	--ion-color-nodejs-contrast: #000000;
+	--ion-color-nodejs-contrast-rgb: 0,0,0;
+	--ion-color-nodejs-shade: #7bb145;
+	--ion-color-nodejs-tint: #98ce60;
+
+
 
 }
 
@@ -307,4 +349,49 @@
   --ion-color-contrast-rgb: var(--ion-color-github-contrast-rgb) !important;
   --ion-color-shade: var(--ion-color-github-shade) !important;
   --ion-color-tint: var(--ion-color-github-tint) !important;
+}
+
+.ion-color-html5 {
+  --ion-color-base: var(--ion-color-html5) !important;
+  --ion-color-base-rgb: var(--ion-color-html5-rgb) !important;
+  --ion-color-contrast: var(--ion-color-html5-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-html5-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-html5-shade) !important;
+  --ion-color-tint: var(--ion-color-html5-tint) !important;
+}
+
+.ion-color-css3 {
+  --ion-color-base: var(--ion-color-css3) !important;
+  --ion-color-base-rgb: var(--ion-color-css3-rgb) !important;
+  --ion-color-contrast: var(--ion-color-css3-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-css3-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-css3-shade) !important;
+  --ion-color-tint: var(--ion-color-css3-tint) !important;
+}
+
+.ion-color-javascript {
+  --ion-color-base: var(--ion-color-javascript) !important;
+  --ion-color-base-rgb: var(--ion-color-javascript-rgb) !important;
+  --ion-color-contrast: var(--ion-color-javascript-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-javascript-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-javascript-shade) !important;
+  --ion-color-tint: var(--ion-color-javascript-tint) !important;
+}
+
+.ion-color-angular {
+  --ion-color-base: var(--ion-color-angular) !important;
+  --ion-color-base-rgb: var(--ion-color-angular-rgb) !important;
+  --ion-color-contrast: var(--ion-color-angular-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-angular-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-angular-shade) !important;
+  --ion-color-tint: var(--ion-color-angular-tint) !important;
+}
+
+.ion-color-nodejs {
+  --ion-color-base: var(--ion-color-nodejs) !important;
+  --ion-color-base-rgb: var(--ion-color-nodejs-rgb) !important;
+  --ion-color-contrast: var(--ion-color-nodejs-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-nodejs-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-nodejs-shade) !important;
+  --ion-color-tint: var(--ion-color-nodejs-tint) !important;
 }
