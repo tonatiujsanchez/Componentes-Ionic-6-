@@ -6,14 +6,14 @@ import { Album } from '../interfaces/album.interface';
 })
 export class FiltroPipe implements PipeTransform {
 
-  transform( arreglo: Album[],  texto:string= '', columna: string = '' ): Album[] {
-    
-    let arrayTemp:Album[] = [];
+  transform( arreglo: any[],  texto:string= '', columna: string = '' ): any[] {
+      
+    let arrayTemp:any[] = [];
   
-    if( arreglo.length !== 0 && texto !== '' ) {
-
+    if( texto !== '' ) {
+      
       arrayTemp = arreglo.filter( 
-          item => item[columna].toLocaleLowerCase().includes( texto.toLocaleLowerCase() ) 
+          item => (item[columna].toLocaleLowerCase()).includes( texto.toLocaleLowerCase() ) 
       );
 
       return arrayTemp;
