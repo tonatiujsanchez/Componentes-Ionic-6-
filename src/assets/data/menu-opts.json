@@ -108,5 +108,10 @@
       "icon": "cog-outline",
       "name": "Tabs",
       "redirectTo": "/tabs"
+    },
+    {
+      "icon": "bookmark-outline",
+      "name": "Toast",
+      "redirectTo": "/toast"
     }
   ]

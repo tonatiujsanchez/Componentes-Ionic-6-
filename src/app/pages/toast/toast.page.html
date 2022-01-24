@@ -1,0 +1,25 @@
+<app-header title="Toast"></app-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button (click)="toatsTop()" expand="block">
+    <ion-label>UP</ion-label>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </ion-button>
+
+  <ion-button (click)="toastMiddle()" expand="block">
+    <ion-label>Middle</ion-label>
+    <ion-icon name="contract-outline"></ion-icon>
+  </ion-button>
+
+  <ion-button (click)="toastBottom()" expand="block">
+    <ion-label>Bottom</ion-label>
+    <ion-icon name="arrow-down-outline"></ion-icon>
+  </ion-button>
+
+  <ion-button (click)="presentToastWithOptions()" expand="block">
+    <ion-label>Whit options</ion-label>
+    <ion-icon name="hammer-outline"></ion-icon>
+  </ion-button>
+
+</ion-content>
