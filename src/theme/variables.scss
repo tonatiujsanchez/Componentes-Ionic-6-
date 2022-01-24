@@ -154,8 +154,21 @@
 	--ion-color-nodejs-shade: #7bb145;
 	--ion-color-nodejs-tint: #98ce60;
 
+  /* reactjs */
+  --ion-color-reactjs: #61DAFB;
+	--ion-color-reactjs-rgb: 97,218,251;
+	--ion-color-reactjs-contrast: #000000;
+	--ion-color-reactjs-contrast-rgb: 0,0,0;
+	--ion-color-reactjs-shade: #55c0dd;
+	--ion-color-reactjs-tint: #71defb;
 
-
+  /* vuejs */
+	--ion-color-vuejs: #41B883;
+	--ion-color-vuejs-rgb: 65,184,131;
+	--ion-color-vuejs-contrast: #000000;
+	--ion-color-vuejs-contrast-rgb: 0,0,0;
+	--ion-color-vuejs-shade: #39a273;
+	--ion-color-vuejs-tint: #54bf8f;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -394,4 +407,22 @@
   --ion-color-contrast-rgb: var(--ion-color-nodejs-contrast-rgb) !important;
   --ion-color-shade: var(--ion-color-nodejs-shade) !important;
   --ion-color-tint: var(--ion-color-nodejs-tint) !important;
+}
+
+.ion-color-reactjs {
+  --ion-color-base: var(--ion-color-reactjs) !important;
+  --ion-color-base-rgb: var(--ion-color-reactjs-rgb) !important;
+  --ion-color-contrast: var(--ion-color-reactjs-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-reactjs-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-reactjs-shade) !important;
+  --ion-color-tint: var(--ion-color-reactjs-tint) !important;
+}
+
+.ion-color-vuejs {
+  --ion-color-base: var(--ion-color-vuejs) !important;
+  --ion-color-base-rgb: var(--ion-color-vuejs-rgb) !important;
+  --ion-color-contrast: var(--ion-color-vuejs-contrast) !important;
+  --ion-color-contrast-rgb: var(--ion-color-vuejs-contrast-rgb) !important;
+  --ion-color-shade: var(--ion-color-vuejs-shade) !important;
+  --ion-color-tint: var(--ion-color-vuejs-tint) !important;
 }
